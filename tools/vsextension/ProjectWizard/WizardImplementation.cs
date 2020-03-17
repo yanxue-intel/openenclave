@@ -66,7 +66,7 @@ namespace OpenEnclaveSDK
                     }
                 }
             }
-            catch (IOException e)
+            catch (IOException)
             {
                 // Output a warning so the developer knows they won't get hardware float support.
                 IVsOutputWindow outWindow = Package.GetGlobalService(typeof(SVsOutputWindow)) as IVsOutputWindow;

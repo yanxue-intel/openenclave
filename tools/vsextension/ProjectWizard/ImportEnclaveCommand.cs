@@ -457,7 +457,7 @@ namespace OpenEnclaveSDK
                         {
                             var vcProjectReference = vcProject.AddProjectReference(enclaveProject) as VCProjectReference;
                             vcProjectReference.LinkLibraryDependency = false;
-                        } catch (Exception ex)
+                        } catch (Exception)
                         {
                             // Reference couldn't be added, it may already exist.
                         }
