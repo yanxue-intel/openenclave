@@ -184,16 +184,6 @@
       <InstallRoot>MSBuild</InstallRoot>
       <VSIXSubPath>Microsoft\VC\v160\1033</VSIXSubPath>
     </Content>
-    <Content Include="VCTargets\Platformx86\Toolset.props">
-      <IncludeInVSIX>true</IncludeInVSIX>
-      <InstallRoot>MSBuild</InstallRoot>
-      <VSIXSubPath>Microsoft\VC\v160\Platforms\Win32\PlatformToolsets\Open Enclave (v142)</VSIXSubPath>
-    </Content>
-    <Content Include="VCTargets\Platformx86\Toolset.targets">
-      <IncludeInVSIX>true</IncludeInVSIX>
-      <InstallRoot>MSBuild</InstallRoot>
-      <VSIXSubPath>Microsoft\VC\v160\Platforms\Win32\PlatformToolsets\Open Enclave (v142)</VSIXSubPath>
-    </Content>
     <Content Include="VCTargets\Platformx64\Toolset.props">
       <IncludeInVSIX>true</IncludeInVSIX>
       <InstallRoot>MSBuild</InstallRoot>
