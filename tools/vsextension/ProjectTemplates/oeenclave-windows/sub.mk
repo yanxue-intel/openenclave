@@ -1,4 +1,4 @@
-OE_SDK_PATH=../../packages/open-enclave-cross.0.8.1-c3b6262c
+OE_SDK_PATH=../../packages/open-enclave-cross.0.8.1-c3b6262c-1
 OE_SDK_INC_PATH=$(OE_SDK_PATH)/build/native/include
 OEEDGER8R=$(OE_SDK_PATH)/tools/oeedger8r
 
