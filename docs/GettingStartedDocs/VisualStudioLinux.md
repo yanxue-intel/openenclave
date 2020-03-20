@@ -107,11 +107,7 @@ int main()
 9. You can now set breakpoints in Visual Studio, e.g., inside `ecall_DoWorkInEnclave()` and inside
    `ocall_DoWorkInHost()` and run and debug the enclave application just like any other application.
 
-The solution will have three configurations: Debug, SGX-Simulation-Debug, and Release.
-The SGX-Simulation-Debug will work the same as Debug, except that SGX support will be emulated
-rather than using hardware support.  This allows debugging on hardware that does not support SGX.
-The Debug and Release configurations can only be run (whether natively or in a VM) successfully on
-SGX-capable hardware.
+The solution will have two configurations: Debug and Release.
 
 ## Modifying the application
 
