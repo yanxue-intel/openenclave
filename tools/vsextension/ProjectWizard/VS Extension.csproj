@@ -190,7 +190,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\ImportEnclaveCommand.png" />
     <Content Include="Resources\ImportEnclaveCommandPackage.ico" />
   </ItemGroup>
   <ItemGroup>
