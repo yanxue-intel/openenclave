@@ -370,20 +370,6 @@ namespace OpenEnclaveSDK
 
                     bool isWindows = (vcProject.keyword != "Linux");
 
-                    // Add any configurations/platforms to the project.
-                    if (isWindows)
-                    {
-                        AddConfiguration(project, "OPTEE-Simulation-Debug", "Debug");
-                    }
-                    if (isWindows && HavePlatform(project, "x64"))
-                    {
-                        AddPlatform(project, "ARM", "x64");
-                    }
-                    else if (isWindows && HavePlatform(project, "Win32"))
-                    {
-                        AddPlatform(project, "ARM", "Win32");
-                    }
-
                     foreach (VCConfiguration config in vcProject.Configurations)
                     {
                         var config3 = config as VCConfiguration3;
@@ -394,12 +380,6 @@ namespace OpenEnclaveSDK
                             var clRule = config.Rules.Item("CL") as IVCRulePropertyStorage;
                             string value = clRule.GetUnevaluatedPropertyValue("PreprocessorDefinitions");
                             clRule.SetPropertyValue("PreprocessorDefinitions", "_ARM_;" + value);
-
-                            if (isWindows) {
-                                // Enable compiling for ARM.
-                                config3.SetPropertyValue("Configuration", true, "WindowsSDKDesktopARMSupport", "true");
-                                config3.SetPropertyValue("Configuration", true, "WindowsSDKDesktopARM64Support", "true");
-                            }
                         }
 
                         if (!isWindows && name.Contains("Debug"))

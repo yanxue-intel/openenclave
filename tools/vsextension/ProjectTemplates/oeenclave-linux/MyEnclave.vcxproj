@@ -108,7 +108,6 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);OE_ECALL=</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -119,7 +118,6 @@
       <Optimization>MaxSpeed</Optimization>
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);OE_ECALL=</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <OptimizeReferences>true</OptimizeReferences>
@@ -130,7 +128,6 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);OE_ECALL=</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -143,7 +140,6 @@
       <Optimization>MaxSpeed</Optimization>
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);OE_ECALL=</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <OptimizeReferences>true</OptimizeReferences>

@@ -88,9 +88,6 @@
     <OEEnclaveWindowsProject_Content Include="..\ProjectTemplates\oeenclave-windows\enclave.vstemplate">
       <Link>OEEnclave Windows Template\enclave.vstemplate</Link>
     </OEEnclaveWindowsProject_Content>
-    <OEEnclaveWindowsProject_Content Include="..\ProjectTemplates\oeenclave-windows\linux_gcc.mak">
-      <Link>OEEnclave Windows Template\linux_gcc.mak</Link>
-    </OEEnclaveWindowsProject_Content>
     <OEEnclaveWindowsProject_Content Include="..\ProjectTemplates\oeenclave-windows\MyEnclave.Debug.conf">
       <Link>OEEnclave Windows Template\MyEnclave.Debug.conf</Link>
     </OEEnclaveWindowsProject_Content>
@@ -108,12 +105,6 @@
     </OEEnclaveWindowsProject_Content>
     <OEEnclaveWindowsProject_Content Include="..\ProjectTemplates\oeenclave-windows\MyEnclave_private.pem">
       <Link>OEEnclave Windows Template\MyEnclave_private.pem</Link>
-    </OEEnclaveWindowsProject_Content>
-    <OEEnclaveWindowsProject_Content Include="..\ProjectTemplates\oeenclave-windows\sub.mk">
-      <Link>OEEnclave Windows Template\sub.mk</Link>
-    </OEEnclaveWindowsProject_Content>
-    <OEEnclaveWindowsProject_Content Include="..\ProjectTemplates\oeenclave-windows\user_ta_header_defines.h">
-      <Link>OEEnclave Windows Template\user_ta_header_defines.h</Link>
     </OEEnclaveWindowsProject_Content>
     <OEEnclaveWindowsProject_Content Include="..\ProjectTemplates\oeenclave-windows\uuids.reg">
       <Link>OEEnclave Windows Template\uuids.reg</Link>

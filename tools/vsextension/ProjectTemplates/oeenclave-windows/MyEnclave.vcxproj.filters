@@ -32,22 +32,9 @@
     <ClInclude Include="$projectname$_t.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="optee/user_ta_header_defines.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="$projectname$_private.pem">
-      <Filter>Resource Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="optee/linux_gcc.mak">
-      <Filter>Resource Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="optee/sub.mk">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

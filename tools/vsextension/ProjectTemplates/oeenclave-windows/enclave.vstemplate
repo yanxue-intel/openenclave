@@ -20,10 +20,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.Debug.conf">MyEnclave.Debug.conf</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.Release.conf">MyEnclave.Release.conf</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$_private.pem">MyEnclave_private.pem</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="optee/linux_gcc.mak">linux_gcc.mak</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="optee/sub.mk">sub.mk</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="optee/uuids.reg">uuids.reg</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="optee/user_ta_header_defines.h">user_ta_header_defines.h</ProjectItem>
     </Project>
   </TemplateContent>
   <WizardExtension>  

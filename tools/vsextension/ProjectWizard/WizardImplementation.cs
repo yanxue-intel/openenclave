@@ -205,25 +205,27 @@ namespace OpenEnclaveSDK
                 replacementsDictionary.TryGetValue("$safeitemname$", out safeitemname);
 
                 // Extract enclave name.
+                string enclavename = "";
                 if (safeitemname.EndsWith("_host") && (safeitemname.Length > 5))
                 {
-                    string enclavename = safeitemname.Substring(0, safeitemname.Length - 5);
+                    enclavename = safeitemname.Substring(0, safeitemname.Length - 5);
 
                     // Add $enclavename$.
                     replacementsDictionary.Add("$enclavename$", enclavename);
                 }
 
-                // Try to get enclave guid from the enclave project.
+                // Try to get enclave guid from the enclave project,
+                // so we can use it in host app code.
                 string enclaveguid = "FILL THIS IN";
-                string makFileName = Path.Combine(EdlLocation, "optee", "linux_gcc.mak");
-                if (File.Exists(makFileName))
+                string enclaveProjectFileName = Path.Combine(EdlLocation, enclavename + ".vcxproj");
+                if (File.Exists(enclaveProjectFileName))
                 {
-                    foreach (string line in File.ReadLines(makFileName))
+                    foreach (string line in File.ReadLines(enclaveProjectFileName))
                     {
-                        int index = line.IndexOf("BINARY=");
+                        int index = line.IndexOf("<TargetName>");
                         if (index >= 0)
                         {
-                            enclaveguid = line.Substring(index + 7).Trim();
+                            enclaveguid = line.Substring(index + 12, 36);
                             break;
                         }
                     }
