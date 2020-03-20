@@ -9,10 +9,11 @@ The following matrix shows what combinations are supported in this version:
 ```
 OS       Platform           Mode         Supported?
 -------  ----------------   -----------  ----------
-Windows  Intel non-SGX      Simulation   Yes
+Windows  Intel non-SGX      Simulation   <needs testing>
 Windows  SGX1               any          Yes
 Windows  SGX1+FLC           any          Yes
 Windows  OP-TEE/TrustZone   any          Not yet
+Linux    Intel non-SGX      Simulation   <needs testing>
 Linux    SGX1               any          <needs testing>
 Linux    SGX1+FLC           any          <needs testing>
 Linux    OP-TEE/TrustZone   any          <needs testing>
