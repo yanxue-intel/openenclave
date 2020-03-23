@@ -10,7 +10,7 @@ Studio Code, see the
 You will need the following:
 
 - A development machine with support for SGX1 or SGX1 with Flexible Launch Control (FLC) (see [instructions for determining the SGX support level](https://github.com/microsoft/openenclave/blob/master/docs/GettingStartedDocs/SGXSupportLevel.md) if needed).
-- [Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/)
+- Visual Studio 2019, v16.5 or later
   (Community edition, or any other edition) with the "Desktop development
   with C++" workload
 - NuGet Package Manager feature, installable via Tools -> Get Tools and Features... ->
