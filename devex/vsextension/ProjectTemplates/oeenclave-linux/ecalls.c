@@ -4,10 +4,9 @@
 #define HEAP_SIZE_BYTES (2 * 1024 * 1024) /* 2 MB */
 #define STACK_SIZE_BYTES (24 * 1024)      /* 24 KB */
 
-#define SGX_PAGE_SIZE (4 * 1024)          /* 4 KB */
+#define SGX_PAGE_SIZE (4 * 1024) /* 4 KB */
 
-#define TA_UUID /* $guid1$ */ \
-    $guid1struct$
+#define TA_UUID /* $guid1$ */ $guid1struct$
 
 OE_SET_ENCLAVE_OPTEE(
     TA_UUID,                                  /* UUID */
@@ -18,16 +17,16 @@ OE_SET_ENCLAVE_OPTEE(
     "$projectname$ TA");                      /* DESCRIPTION */
 
 OE_SET_ENCLAVE_SGX(
-    1,                                        /* ProductID */
-    1,                                        /* SecurityVersion */
+    1, /* ProductID */
+    1, /* SecurityVersion */
 #ifdef _DEBUG
-    1,                                        /* Debug */
+    1, /* Debug */
 #else
-    0,                                        /* Debug */
+    0, /* Debug */
 #endif
-    HEAP_SIZE_BYTES / SGX_PAGE_SIZE,          /* NumHeapPages */
-    STACK_SIZE_BYTES / SGX_PAGE_SIZE,         /* NumStackPages */
-    1);                                       /* NumTCS */
+    HEAP_SIZE_BYTES / SGX_PAGE_SIZE,  /* NumHeapPages */
+    STACK_SIZE_BYTES / SGX_PAGE_SIZE, /* NumStackPages */
+    1);                               /* NumTCS */
 
 int ecall_DoWorkInEnclave(void)
 {

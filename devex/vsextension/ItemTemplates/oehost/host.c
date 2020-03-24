@@ -1,7 +1,9 @@
 #include <openenclave/host.h>
 #include "$enclavename$_u.h"
 
-oe_result_t create_$enclavename$_enclave(const char* enclave_name, oe_enclave_t** out_enclave)
+oe_result_t create_$enclavename$_enclave(
+    const char* enclave_name,
+    oe_enclave_t** out_enclave)
 {
     oe_enclave_t* enclave = NULL;
     uint32_t enclave_flags = 0;
@@ -14,15 +16,11 @@ oe_result_t create_$enclavename$_enclave(const char* enclave_name, oe_enclave_t*
     enclave_flags |= OE_ENCLAVE_FLAG_DEBUG;
 #endif
     result = oe_create_$enclavename$_enclave(
-        enclave_name,
-        OE_ENCLAVE_TYPE_AUTO,
-        enclave_flags,
-        NULL,
-        0,
-        &enclave);
+        enclave_name, OE_ENCLAVE_TYPE_AUTO, enclave_flags, NULL, 0, &enclave);
     if (result != OE_OK)
     {
-        printf("Error %d creating enclave, trying simulation mode...\n", result);
+        printf(
+            "Error %d creating enclave, trying simulation mode...\n", result);
         enclave_flags |= OE_ENCLAVE_FLAG_SIMULATE;
         result = oe_create_$enclavename$_enclave(
             enclave_name,
