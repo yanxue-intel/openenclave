@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Open Enclave SDK contributors.
+     Licensed under the MIT License.
+  -->
 <Rule
       Name="OpenEnclaveGeneral"
       DisplayName="Open Enclave Clang"

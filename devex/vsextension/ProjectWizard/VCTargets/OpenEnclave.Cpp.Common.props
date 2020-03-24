@@ -1,4 +1,7 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<!-- Copyright (c) Open Enclave SDK contributors.
+     Licensed under the MIT License.
+  -->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- The general order of executing an MSBuild file is roughly:
        1) vcxproj file
        2) Import Microsoft.Cpp.props

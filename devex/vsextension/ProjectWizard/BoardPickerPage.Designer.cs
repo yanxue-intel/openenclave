@@ -1,4 +1,6 @@
-﻿namespace OpenEnclaveSDK
+﻿// Copyright (c) Open Enclave SDK contributors.
+// Licensed under the MIT License.
+namespace OpenEnclaveSDK
 {
     partial class BoardPickerPage
     {

@@ -1,4 +1,7 @@
-﻿<!--
+﻿<!-- Copyright (c) Open Enclave SDK contributors.
+     Licensed under the MIT License.
+  -->
+<!--
 ***********************************************************************************************
 Toolset.targets
 
@@ -8,9 +11,6 @@ WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and
 
 This file defines the steps/targets required to build Visual C++ (version 14.0) projects
 specifically on x64 platforms.
-
-Copyright (c) Open Enclave SDK contributors.
-Licensed under the MIT License
 ***********************************************************************************************
 -->
 
