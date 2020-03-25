@@ -4,7 +4,7 @@
   -->
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="OpenEnclaveVisualStudioExtension-1" Version="0.7.28" Language="en-US" Publisher="Microsoft" />
+        <Identity Id="OpenEnclaveVisualStudioExtension-1" Version="0.7.29" Language="en-US" Publisher="Microsoft" />
         <DisplayName>Open Enclave - Preview</DisplayName>
         <Description xml:space="preserve">Support for developing and debugging Trusted Execution Environment enclaves that can run on both SGX and TrustZone, and using them from your own applications.</Description>
         <MoreInfo>https://github.com/openenclave/openenclave/blob/master/docs/GettingStartedDocs/visualstudio_dev.md</MoreInfo>
