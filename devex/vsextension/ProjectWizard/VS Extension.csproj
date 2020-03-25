@@ -152,10 +152,7 @@
       <ResourceName>Menus.ctmenu</ResourceName>
       <SubType>Designer</SubType>
     </VSCTCompile>
-    <Content Include="Packages\open-enclave-cross.0.8.1-c3b6262c-2.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\EnclaveCommonAPI.1.4.100.2.nupkg">
+    <Content Include="Packages\open-enclave-cross.0.8.1-c3b6262c-3.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="VCTargets\OpenEnclave.Cpp.Common.props">
@@ -395,6 +392,6 @@
   <Import Project="..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.8.36\build\Microsoft.VisualStudio.SDK.Analyzers.targets" Condition="Exists('..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.8.36\build\Microsoft.VisualStudio.SDK.Analyzers.targets')" />
   <Import Project="..\packages\NuGet.VisualStudio.4.9.3\build\NuGet.VisualStudio.targets" Condition="Exists('..\packages\NuGet.VisualStudio.4.9.3\build\NuGet.VisualStudio.targets')" />
   <PropertyGroup>
-    <PreBuildEvent>curl --proto "=https" --tlsv1.2 -sSfL https://www.nuget.org/api/v2/package/open-enclave-cross/0.8.1-c3b6262c-2 --output $(ProjectDir)\packages\open-enclave-cross.0.8.1-c3b6262c-2.nupkg -z $(ProjectDir)\packages\open-enclave-cross.0.8.1-c3b6262c-2.nupkg</PreBuildEvent>
+    <PreBuildEvent>curl --proto "=https" --tlsv1.2 -sSfL https://www.nuget.org/api/v2/package/open-enclave-cross/0.8.1-c3b6262c-3 --output $(ProjectDir)\packages\open-enclave-cross.0.8.1-c3b6262c-3.nupkg -z $(ProjectDir)\packages\open-enclave-cross.0.8.1-c3b6262c-3.nupkg</PreBuildEvent>
   </PropertyGroup>
 </Project>
