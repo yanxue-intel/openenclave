@@ -16,6 +16,7 @@
 .*\.png$
 .*\.resx$
 .*\.sln$
+.*\.snk$
 .*\.svg$
 .*\.toml$
 .*Jenkinsfile$
